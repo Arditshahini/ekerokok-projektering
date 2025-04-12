@@ -27,11 +27,10 @@ export const CreateUser = () => {
             }, 5000)
 
             let imageUrl = null
-            // Ladda upp filen till Firebase Storage
             if (file) {
-                const storageRef = ref(storage, `files/${file.name}`) // Skapa en referens till platsen där filen ska laddas upp
+                const storageRef = ref(storage, `files/${file.name}`)
                 try {
-                    await uploadBytes(storageRef, file) // Ladda upp filen till Firebase Storage
+                    await uploadBytes(storageRef, file)
 
                     imageUrl = await getDownloadURL(storageRef)
 
@@ -94,7 +93,7 @@ export const CreateUser = () => {
 
             <input
                 type="file"
-                onChange={(event) => setFile(event.target.files[0])} // Uppdatera state när användaren väljer en fil
+                onChange={(event) => setFile(event.target.files[0])} 
             />
 
             <button className={styles.submitButton} onClick={submitHandler}>
