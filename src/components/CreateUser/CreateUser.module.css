@@ -1,0 +1,39 @@
+.container {
+	background-color: white;
+	padding: 1.6rem;
+	border-radius: 0.2rem;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0.5rem 0.8rem -0.2rem rgba(0,0,0,.8);
+}
+
+.submitButton {
+	background-color: #3c425c;
+	margin-top: 0.5rem;
+	color: rgba(255,255,255,.9);
+	border: none;
+	font-size: 0.5rem;
+	font-weight: 600;
+	padding: 0.5rem 1.6rem;
+	border-radius: 2rem;
+	font-family: verdana;
+	box-shadow: 0 0.1rem 0.4rem -0.2rem rgba(0,0,0,.8);
+	transition: all 0.2s ease-in-out;
+}
+
+/** ::hover pseudo element */
+.submitButton:hover {
+	background-color: #2b3045;
+}
+
+/** ::active pseudo element */
+.submitButton:active {
+	transform: scale(0.95);
+}
+
+
+.feedbackText {
+	font-family: verdana;
+	font-weight: 600;
+	font-size: 0.5rem;
+}
